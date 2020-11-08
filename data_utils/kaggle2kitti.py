@@ -55,7 +55,7 @@ class kaggle2kitti():
         image_extensions = ['.jpeg', '.jpg', '.png']
         _count_mask = 0
         _count_no_mask = 0
-        for image_name in os.listdir(self.images_dir):
+        for image_name in os.listdir("/"+self.images_dir ):
             if image_name.endswith('.jpeg') or image_name.endswith('.jpg') or image_name.endswith('.png'):
                 labels_xml = self.get_image_metafile(image_file=image_name)
                 if os.path.isfile(labels_xml):
