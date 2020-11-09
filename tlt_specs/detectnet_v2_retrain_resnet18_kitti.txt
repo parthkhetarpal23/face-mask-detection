@@ -1,8 +1,8 @@
 random_seed: 42
 dataset_config {
   data_sources {
-    tfrecords_path: "/home/data/tfrecords/kitti_trainval/*"
-    image_directory_path: "/home/data/train"
+    tfrecords_path: "/home/parth/Downloads/tfrecords/kitti_trainval/*"
+    image_directory_path: "/home/parth/Downloads/train"
   }
   image_extension: "jpg"
   target_class_mapping {
